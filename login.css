@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main_card{
+    width: 100vw;
+    height: 100vh;
+    background-image:url(/images/login&register_2.jpg);
+    /* background-image:url(/pink_stuff.jpg); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+.login_card{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background:transparent;
+    border:  2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow:  0 0 10px rgba(0, 0, 0, .2);
+    width: 30%;
+    border-radius: 10px;
+    padding: 2rem;
+    color: #142d4c;
+}
+
+.email_input, .password_input{
+    display: flex;
+    flex-direction: row;
+
+}
+
+svg{
+    position: relative;
+    right: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: #2d698f;
+}
+
+::placeholder{
+    color:#2d698f;
+}
+input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #132c3c;
+    padding-bottom: 10px;
+    width: 100%;
+    background: transparent;
+}
+
+input:focus::-webkit-input-placeholder{
+    color: #3fa4bc;
+}
+
+input:focus{
+    border-bottom: 2px solid #3fa4bc;
+    padding-bottom: 20px;
+    color: #3fa4bc;;
+
+}
+
+
+.login_btn{
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: #113f67;
+    font-weight: 700;
+    background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+    /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
+}
+
+.login_btn:hover{
+    color: #3fa4bc;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+a:hover{
+    color: #d7c3b2;
+}
+
+.forgot_password_link{
+   align-self: flex-end;
+}
+
+.register_box{
+    align-self: center;
+    color: #27658b;
+}
+
+.email, .password{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+
+/* 
+input moving up and change color
+link color and no underline
+
+ */
+
+
+.error{
+    display: flex;
+    color: #e22e1e;
+}
+
+@media only screen and (max-width: 600px) {
+    .login_card{
+        display: flex;
+        flex-direction: column;
+        background:transparent;
+        border:  2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(20px);
+        box-shadow:  0 0 10px rgba(0, 0, 0, .2);
+        width: 50%;
+        height: 90%;
+        border-radius: 10px;
+        padding: 2rem;
+        gap: 2rem;
+        color: #142d4c;
+    }
+     
+}
+
+@media only screen and (min-width: 600px) {
+    .login_card{
+        display: flex;
+        flex-direction: column;
+        background:transparent;
+        border:  2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(20px);
+        box-shadow:  0 0 10px rgba(0, 0, 0, .2);
+        width: 40%;
+        height: 90%;
+        border-radius: 10px;
+        padding: 2rem;
+        gap: 2rem;
+        color: #142d4c;
+    }
+     
+}
+
+@media only screen and (max-width: 450px) {
+    .login_card{
+        display: flex;
+        flex-direction: column;
+        background:transparent;
+        border:  2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(20px);
+        box-shadow:  0 0 10px rgba(0, 0, 0, .2);
+        width: 70%;
+        height: 90%;
+        border-radius: 10px;
+        padding: 2rem;
+        gap: 2rem;
+        color: #142d4c;
+    }
+     
+}
+@media only screen and (max-height: 600px){
+    .login_card{
+        display: flex;
+        flex-direction: column;
+        background:transparent;
+        border:  2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(20px);
+        box-shadow:  0 0 10px rgba(0, 0, 0, .2);
+        width: 80%;
+        height:60%;
+        border-radius: 10px;
+        padding: 2rem;
+        gap: 1rem;
+        padding-top: 2rem;
+        color: #142d4c;
+    }
+}
+@media only screen and (min-height: 600px){
+    .login_card{
+        display: flex;
+        flex-direction: column;
+        background:transparent;
+        border:  2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(20px);
+        box-shadow:  0 0 10px rgba(0, 0, 0, .2);
+        width: 80%;
+        height:60%;
+        border-radius: 10px;
+        padding: 2rem;
+        gap: 2rem;
+        padding-top: 2rem;
+        color: #142d4c;
+    }
+}
+@media only screen and (min-width: 900px){
+    .login_card{
+        display: flex;
+        flex-direction: column;
+        background:transparent;
+        border:  2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(20px);
+        box-shadow:  0 0 10px rgba(0, 0, 0, .2);
+        width: 30%;
+        height:90%;
+        border-radius: 10px;
+        padding: 2rem;
+        gap: 3rem;
+        padding-top: 2rem;
+        color: #142d4c;
+    }
+     
+}

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/addFLat.css">
+    <title>Add Flat</title>
+</head>
+<body>
+    <main>
+        <div class="header_page">
+            <div class="navbar">
+                <span class="logo"><img src="/images/gold_logo.png" alt=""></span>
+                <div class="buttons">
+                    <ul class="menu">
+                        <li><a href="/homepage.html">Home</a></li>
+                        <li><a href="/addFlat.html">Add flat</a></li>
+                        <li><a href="/allFlats.html">All flats</a></li>
+                        <li><a href="/profile.html">Profile</a></li>
+                        <i class="fa-regular fa-heart"></i>
+                    </ul>
+                    <span class="logout">
+                        <span><a href="/login.html">Logout</a></span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="10px"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#d3d8de" d="M377.9 105.9L500.7 228.7c7.2 7.2 11.3 17.1 11.3 27.3s-4.1 20.1-11.3 27.3L377.9 406.1c-6.4 6.4-15 9.9-24 9.9c-18.7 0-33.9-15.2-33.9-33.9l0-62.1-128 0c-17.7 0-32-14.3-32-32l0-64c0-17.7 14.3-32 32-32l128 0 0-62.1c0-18.7 15.2-33.9 33.9-33.9c9 0 17.6 3.6 24 9.9zM160 96L96 96c-17.7 0-32 14.3-32 32l0 256c0 17.7 14.3 32 32 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-64 0c-53 0-96-43-96-96L0 128C0 75 43 32 96 32l64 0c17.7 0 32 14.3 32 32s-14.3 32-32 32z"/></svg>
+                    </span>
+                </div> 
+                
+            </div>
+        </div>
+        <div class="main_card">
+            <div class="login_card">
+                <span class="title"> Flat details</span>
+                <div class="user_type">
+                    <div class="first">
+                        <div class="flat_name">
+                            <div class="flat_name_input">
+                                <input type="text" placeholder="Flat Name" id="flatName">
+                            </div>
+                            <span id="flatNameErrorHint" class="error"></span>
+                        </div>
+            
+                        <div class="city">
+                            <div class="city_input">
+                                <input type="text" placeholder="City" id="city">
+                            </div>
+                            <span id="cityErrorHint" class="error"></span>
+                        </div>
+                        <div class="street_name">
+                            <div class="street_name_input">
+                                <input type="text" placeholder="Street Name" id="streetName">
+                            </div>
+                            <span id="streetNameErrorHint" class="error"></span>
+                        </div>
+            
+                        <div class="street_number">
+                            <div class="street_number_input">
+                                <input type="text" placeholder="Street No" id="streetNumber">
+                            </div>
+                            <span id="streetNumberErrorHint" class="error"></span>
+    
+                        </div>  
+            
+                       
+                    </div>
+                    
+                    <div class="second">
+                        
+                        <div class="floor_area">
+                            <div class="floor_area_input">
+                                <input type="number" placeholder="Floor Area" id="floorArea">
+                            </div>
+                            <span id="floorAreaErrorHint" class="error"></span>
+                        </div>
+                        <div class="year_of_construction">
+                            <div class="year_of_construction">
+                                <input type="number" placeholder="Year of construction" id="yearOfConstruction">
+                            </div>
+                            <span id="yearOfConstructionErrorHint" class="error"></span>
+                        </div>
+            
+                        <div class="rent_price">
+                            <div class="rent_price">
+                                <input type="number" placeholder="Rent Price" id="rentPrice">
+                            </div>
+                            <span id="rentPriceErrorHint" class="error"></span>
+                        </div>
+                        <div class="available_dates">
+                            <div class="available_dates">
+                                <input type="date" id="availableDates">
+                            </div>
+                            <div>
+                                <span id="availableDatesErrorHint" class="error"></span>
+                            </div>            
+                        </div>      
+                    </div>
+                    
+                    <div class="third">
+                        <div class="has_AC">
+                            <span>AC :</span>
+                            <div class="has_AC_input">
+                       
+                                <input type="checkbox" value="Yes" id="yesAC">Yes
+                        
+                                <input type="checkbox" value="No" id="noAC">No
+        
+                            </div>
+                            <span id="floorAreaErrorHint" class="error"></span>
+                        </div>
+                          
+                    </div>
+                    
+                 
+                    
+        
+                </div>
+    
+                <div>
+                    <button class="add_btn" id="addBtn">Add</button>
+                    <span id="checkBoxErrorHint" class="error"></span>
+                </div>  
+            </div>
+            
+           
+        </div>
+    </main>
+    
+    <script src="addflat.js"></script>
+</body>
+</html>

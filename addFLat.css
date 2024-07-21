@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/images/5.jpg);   
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;   
+    overflow-x: hidden;
+}
+
+.header_page{
+
+    display: flex;
+   flex-direction:column;
+   width: 100%;
+
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+   align-items: center;
+   height: 100%;
+   background:transparent;
+   border:  2px solid rgba(255, 255, 255, .2);
+   backdrop-filter: blur(50px);
+   box-shadow:  0 0 10px rgba(0, 0, 0, .6);
+   padding: 1rem;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4rem;
+    width: 50%;
+    height: 100%;
+    margin-right: 30%;
+
+
+}
+ul{
+    list-style: none;
+}
+
+li{
+
+
+    width: 5rem;
+    text-align: center;
+    padding: 2px;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+
+}
+
+.logo{
+    height:100%;
+
+ 
+}
+.header_page img{
+    width: 15%;
+}
+
+a{
+    color:#d3d8de;
+    text-decoration: none;
+}
+
+
+
+.logout{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-left: 60%;
+ 
+}
+
+
+
+.main_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+
+
+.user_type{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.first,.second{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+
+
+.login_card{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background:transparent;
+    border:  2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow:  0 0 10px rgba(0, 0, 0, .2);
+    width: 80%;
+    border-radius: 10px;
+    padding: 2rem 2rem;
+    color: #142d4c;
+
+}
+
+
+.user_type{
+    display:flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.first,.second{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+   
+.title{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    color: #3fa4bc;
+
+}
+
+
+
+.username_input, .email_input, .password_input, .last_name_input, .first_name_input {
+    display: flex;
+    flex-direction: row;
+}
+
+::placeholder{
+    color: #2d698f;
+}
+
+::-webkit-datetime-edit-text,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-year-field{
+    color: #2d698f;
+
+}
+::-webkit-calendar-picker-indicator {
+    
+filter: invert(36%) sepia(49%) saturate(588%) hue-rotate(160deg) brightness(91%) contrast(93%);
+}
+.DOB{
+    color: #2d698f;
+}
+input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #132c3c;
+    padding-bottom: 10px;
+    width: 100%;
+    background: transparent;
+}
+
+
+input:focus::-webkit-input-placeholder{
+    color: #3fa4bc;
+}
+
+input:focus{
+    border-bottom: 2px solid #3fa4bc;
+    padding-bottom: 20px;
+    color: #3fa4bc;
+
+} 
+
+
+.add_btn{
+    margin-left:30%;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    width: 30%;
+    color: #113f67;
+    font-weight: 700;
+    background-image: linear-gradient(to top, #d5d4d0 0%, #d5d4d0 1%, #eeeeec 31%, #efeeec 75%, #e9e9e7 100%);
+   
+
+}
+
+.add_btn:hover{
+    color: #3fa4bc;
+} 
+
+.third{
+    display: flex;
+    flex-direction: column;
+
+}
+.has_AC{
+    display: flex;
+    flex-direction: column;
+
+    color: #3fa4bc;
+}
+
+.has_AC_input{
+   display: flex;
+   flex-direction: row;
+   gap: 1rem;
+    color: #3fa4bc;
+  
+}
+
+a{
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+
+a::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+  
+a:hover::before {
+    width: 200px;
+    height: 200px;
+    animation: ripple78 1s ease-out infinite;
+    opacity: 1;
+}
+  
+@keyframes ripple78 {
+    0% {
+      width: 0;
+      height: 0;
+      opacity: 1;
+    }
+    100% {
+      width: 200px;
+      height: 200px;
+      opacity: 0;
+    }
+}
